@@ -23,7 +23,7 @@ myMarkups:
 myExpression: '0..10'
 ```
 
-While marker-comments like these are great for getting to know the plugin initially, they do tend to add a lot of visual clutter, so keys may also be suffixed with `_M` for markup and `_E` for expressions, as to reduce noise while still ensuring unambiguous highlighting. These suffixes also trickle down but personally, I'd really advise against that, making it easier for the user editing the config to know what's what by adding a suffix to each key that is running through `ComponentMarkup`'s parsers.
+While marker-comments like these are great for getting to know the plugin initially, they do tend to add a lot of visual clutter, so keys may also be suffixed with `_M` for markup and `_E` for expressions, as to reduce noise while still ensuring unambiguous highlighting. These suffixes also trickle down but personally, I'd really advise against that in mixed-key environments, making it easier for the user editing the config to know what's what by adding a suffix to each key that is running through `ComponentMarkup`'s parsers.
 
 ```yml
 myMarkups:
