@@ -1,5 +1,7 @@
 # cm-support
 
+Adding syntax-highlighting- and error-reporting-support to IntelliJ for [ComponentMarkup](https://github.com/BlvckBytes/ComponentMarkup) by injecting additional annotations to scalar values within configuration-files.
+
 ## Overview
 
 Currently, the plugin only supports YAML-files, but I am looking to expand on that limitation soon, seeing how I am myself trying to move away from that cursed language.
