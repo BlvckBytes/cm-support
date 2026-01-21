@@ -15,6 +15,16 @@ public enum CMMarkerType {
     this.marker = marker;
   }
 
+  public static @Nullable CMMarkerType byKey(String key) {
+    if (key.endsWith("_M"))
+      return MARKUP;
+
+    if (key.endsWith("_E"))
+      return EXPRESSION;
+
+    return null;
+  }
+
   public static @Nullable CMMarkerType byComment(PsiComment comment) {
     var commentContents = comment.getText();
 

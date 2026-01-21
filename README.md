@@ -10,8 +10,7 @@ In order to receive syntax-highlighting, keys have to be marked, as the plugin h
 
 Example:
 
-```
-
+```yml
 # cm-support Markup
 myMarkups:
   first: '<&c>Hello, first!'
@@ -22,5 +21,16 @@ myMarkups:
 
 # cm-support Expression
 myExpression: '0..10'
+```
 
+While marker-comments like these are great for getting to know the plugin initially, they do tend to add a lot of visual clutter, so keys may also be suffixed with `_M` for markup and `_E` for expressions, as to reduce noise while still ensuring unambiguous highlighting. These suffixes also trickle down but personally, I'd really advise against that, making it easier for the user editing the config to know what's what by adding a suffix to each key that is running through `ComponentMarkup`'s parsers.
+
+```yml
+myMarkups:
+  first_M: '<&c>Hello, first!'
+  second_M: '<&b>Hello, second!'
+  third_M: '<&d>Hello, third!'
+  noMarkup: 'I am a plain string'
+
+myExpression_E: '0..10'
 ```

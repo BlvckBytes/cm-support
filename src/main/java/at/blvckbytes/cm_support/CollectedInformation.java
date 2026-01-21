@@ -64,6 +64,13 @@ public class CollectedInformation {
       break;
     }
 
+    if (psiElement instanceof YAMLKeyValue keyValue) {
+      var detectedMarker = CMMarkerType.byKey(keyValue.getKeyText());
+
+      if (detectedMarker != null)
+        effectiveMarker = detectedMarker;
+    }
+
     if (psiElement instanceof YAMLDocument)
       walkFlags.add(WalkFlag.RESET_MARKER_AFTER_ENCOUNTERING_KEY_VALUE);
 
