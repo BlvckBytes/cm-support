@@ -1,10 +1,8 @@
 package at.blvckbytes.cm_support;
 
-import at.blvckbytes.component_markup.markup.parser.token.Token;
 import at.blvckbytes.component_markup.markup.parser.token.TokenType;
 import com.intellij.openapi.editor.colors.TextAttributesKey;
 import com.intellij.openapi.editor.markup.TextAttributes;
-import com.intellij.openapi.util.Key;
 import com.intellij.ui.JBColor;
 
 public class CMColorScheme {
