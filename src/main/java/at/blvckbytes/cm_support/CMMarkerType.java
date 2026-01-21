@@ -6,6 +6,7 @@ import org.jetbrains.annotations.Nullable;
 public enum CMMarkerType {
   MARKUP("cm-support Markup"),
   EXPRESSION("cm-support Expression"),
+  BLOCK_OUT("!cm-support"),
   ;
 
   public final String marker;

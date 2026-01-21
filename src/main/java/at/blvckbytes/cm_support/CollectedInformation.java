@@ -50,7 +50,7 @@ public class CollectedInformation {
         var detectedMarker = CMMarkerType.byComment(comment);
 
         if (detectedMarker != null) {
-          effectiveMarker = detectedMarker;
+          effectiveMarker = detectedMarker != CMMarkerType.BLOCK_OUT ? detectedMarker : null;
           break;
         }
 
